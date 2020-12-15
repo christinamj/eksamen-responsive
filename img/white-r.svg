@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="959" viewBox="0 0 1920 959">
+  <defs>
+    <clipPath id="clip-Web_1920_16">
+      <rect width="1920" height="959"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_16" data-name="Web 1920 – 16" clip-path="url(#clip-Web_1920_16)">
+    <rect width="1920" height="959" fill="#fff"/>
+    <g id="r-bluenred" transform="translate(-113.999 -898.763)" opacity="0.025">
+      <path id="Path_181" data-name="Path 181" d="M1080.62,293.95c129.323,0,458.19,56.385,458.19,439.7,0,110.183-49.53,439.7-567.468,439.7H696.4V657.864L311.538,572.123v1701.5L0,2346.947V2566.8H1008.717V2345.654l-311.538-73.326v-824.82H809.689c386.028,0,470.993,273.647,561.648,471.123l297.442,646.613h549.1V2345.4l-261.1-58.2c-19.657,11.9-393.4-877.583-509.531-912.759,260.714-79.275,476.425-327.057,476.425-640.664C1923.674,145.876,1378.062,0,1099.242,0H0V138.375L697.178,293.562Z" transform="translate(0.776 0)" fill="#26424f"/>
+      <rect id="Rectangle_415" data-name="Rectangle 415" width="2218.66" height="94.664" transform="translate(0 3039.988)" fill="#c8443c"/>
+    </g>
+  </g>
+</svg>
