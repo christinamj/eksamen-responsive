@@ -6,10 +6,10 @@ const obj = {
     "sendername": "Acme customer support"
     }
     document.querySelector(".btn-primary").addEventListener("click", () => {
-    fetch("https://database-9a93.restdb.io/mail", {
+    fetch("https://frontend-8e4d.restdb.io/mail", {
     method: "POST",
     headers: {
-    "x-apikey": "5e958ed5436377171a0c235e",
+    "x-apikey": "5e9961cb436377171a0c24cc",
     "Content-Type": "application/json",
     "Cache-Control": "no-cache"
     },

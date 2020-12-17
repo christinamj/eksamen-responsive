@@ -1,13 +1,26 @@
+body {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
 .thank-you {
   font-size: 16px;
   padding: 20px;
+  position: relative;
+  left: 25%;
+  padding-right: 59%;
+  top: 25%;
+  width: 100%;
+  font-family: "Playfair Display", serif;
 }
 #applications-form {
   padding: 10px;
+  width: 49%;
 }
 #applications-form input,
 #applications-form select {
-  width: 95%;
+  width: 100%;
 }
 
 #applications-form input:hover {
@@ -16,7 +29,9 @@
 label {
   display: block;
   font-weight: 300 !important;
-  font-family: "Playfair Display", serif !important;
+  font-family: "raleway", sans-serif !important;
+  padding: 10px 0px 10px 0px;
+  font-size: 20px;
 }
 .form-control {
   width: auto;
@@ -27,21 +42,25 @@ label {
   margin-left: 10px;
 }
 .progress {
-  width: 300px;
+  width: 100%;
   height: 10px;
   border-radius: 0px;
   margin-top: 2px;
 }
 #btn-submit {
-  width: 480px;
+  width: 105%;
   background-color: #26424f;
   border: none;
   font-size: 15px;
   color: white;
   border-radius: 0px;
   font-family: "Playfair Display", serif !important;
-  padding: 16px 16px;
+  padding: 32px 16px;
   margin-top: 5px;
+}
+
+.first-col .form-control {
+  font-size: 19px !important;
 }
 
 #btn-submit:hover {
@@ -75,9 +94,13 @@ input[type="file"] {
   border: 1.5px solid black;
   font-family: "Raleway", sans-serif !important;
   border-radius: 0px;
-  height: 25px;
-
+  height: 45px;
   transition: 0.3s;
+}
+
+#applications-form input,
+#applications-form select {
+  width: 100%;
 }
 
 body {
@@ -102,53 +125,4 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
-}
-
-@media only screen and (max-width: 500px) {
-  #applications-form input,
-  #applications-form select {
-    width: 750px !important;
-  }
-
-  .form-control {
-    height: 86px !important;
-    width: 750px !important;
-  }
-
-  .logo {
-    height: 153px !important;
-    width: 45% !important;
-    margin-top: 111px;
-    margin-left: 29%;
-    background-image: url(img/logo-right.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .form-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-top: 4%;
-    font-family: "Playfair Display", serif !important;
-    font-size: 29px;
-    font-weight: 300 !important;
-  }
-
-  #btn-submit {
-    width: 749px !important;
-    background-color: #26424f;
-    border: none;
-    font-size: 29px;
-    color: white;
-    border-radius: 0px;
-    font-family: "Playfair Display", serif !important;
-    padding: 30px 30px;
-    margin-top: 26px;
-  }
-  .form-control {
-    width: auto;
-    padding: 24px 12px;
-    font-size: 26px;
-  }
 }

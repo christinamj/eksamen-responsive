@@ -3,23 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="We’re Responsive, a boutique consultancy firm based in Copenhagen. We work closely with our clients to develop digital customer experiences that deliver tangible business value.">
-    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/dk.responsive.website/master/img/logo-link.svg">
+    <meta name="description" content="We’re Responsive, a boutique consultancy firm based in Copenhagen. We work closely with our clients to develop digital customer experiences that deliver tangible business value." />
+    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/dk.responsive.website/master/img/logo-link.svg" />
     <title>Responsive</title>
-    <link rel="icon" type="image/png" href="img/favicon.svg"/>
+    <link rel="icon" type="image/png" href="img/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <header id="site-header">
-      <a id="logo" href="index.html"><div class="logo"></div></a>
+      <a id="logo" href="index.html"><div class="logo" alt="logo"></div></a>
       <nav>
-        <a class="menupoint" href="principles.html">Principles</a>
-        <a class="menupoint" href="insights.html">Insights</a>
-        <a class="menupoint" href="expertise.html">Expertise</a>
-        <a class="menupoint" href="cases.html">Cases</a>
-        <a class="menupoint" href="aboutus.html">About us</a>
+        <div>
+          <a class="menupoint" href="principles.html">Principles</a>
+        </div>
+        <div>
+          <a class="menupoint" href="insights.html">Insights</a>
+        </div>
+        <div class="point-expertise">
+          <a class="menupoint" href="expertise.html">Expertise</a>
+          <div class="dropdown-content1">
+            <a class="menupoint" href="sektor.html">Sectors</a>
+          </div>
+        </div>
+        <div>
+          <a class="menupoint" href="cases.html">Cases</a>
+        </div>
+        <div class="point-about">
+          <a class="menupoint" href="aboutus.html">About us</a>
+
+          <div class="dropdown-content">
+            <a class="menupoint" href="career.html">Career</a>
+          </div>
+        </div>
       </nav>
       <div class="burgermenu"></div>
     </header>
@@ -42,7 +59,6 @@
               <img class="close-model" src="img/close-icon.svg" />
             </div>
             <div class="section-principles-text">
-        
               <h2>Our principles of operation</h2>
               <p>
                 Every business has its challenges. Solving them requires flexibility of thought. At Responsive, we don’t start from scratch. Instead we work with a unique set of principles to understand and develop your business in the digital age.
@@ -53,32 +69,46 @@
           </div>
           <div class="section-principles-col2">
             <div class="model-click">
-            <h3>Click on the model to explore</h3>
-            <hr class="entry-hr">
-          </div>
-            <h3 class="goals-appear model-txt hide">A clear direction must be established through an understanding of the business and its surroundings.<br> <br>
-              We help set the goals and build the business case for your long-term investments.</h3>
-              <h3 class="customer-appear model-txt hide">A digital transformation requires solid customer insights. <br> <br>
-                Together we identify your profitable customers, the growth pockets in your customer segments and develop a deep understanding of customer needs.</h3>
-                <h3 class="concept-appear model-txt hide">All customer experiences must be based on customer insights and should work to build a position in the market.<br><br>
-                  We analyse what you have done and help you build the business and creative concept of your customer experience that will support your positioning.</h3>
-                  <h3 class="data-appear model-txt hide">The data that lives in an organisational sphere determines the ability to personalise customer experiences.
-<br> <br>
-                    We help you consolidate and activate data to amplify your customer experiences.</h3>
-                    <h3 class="tech-appear model-txt hide">Technology is ubiquitous in a digital transformation. And it’s not solely the remit of the CIO office – but very much a joint responsibility. <br> <br>
-                    Together we help enable your commercial and digital organisation to own the digital infrastructure that will define your ability to succeed.</h3>
+              <h3>Click on the model to explore</h3>
+              <hr class="entry-hr" />
+            </div>
+            <h3 class="goals-appear model-txt hide">
+              A clear direction must be established through an understanding of the business and its surroundings.<br />
+              <br />
+              We help set the goals and build the business case for your long-term investments.
+            </h3>
+            <h3 class="customer-appear model-txt hide">
+              A digital transformation requires solid customer insights. <br />
+              <br />
+              Together we identify your profitable customers, the growth pockets in your customer segments and develop a deep understanding of customer needs.
+            </h3>
+            <h3 class="concept-appear model-txt hide">
+              All customer experiences must be based on customer insights and should work to build a position in the market.<br /><br />
+              We analyse what you have done and help you build the business and creative concept of your customer experience that will support your positioning.
+            </h3>
+            <h3 class="data-appear model-txt hide">
+              The data that lives in an organisational sphere determines the ability to personalise customer experiences. <br />
+              <br />
+              We help you consolidate and activate data to amplify your customer experiences.
+            </h3>
+            <h3 class="tech-appear model-txt hide">
+              Technology is ubiquitous in a digital transformation. And it’s not solely the remit of the CIO office – but very much a joint responsibility. <br />
+              <br />
+              Together we help enable your commercial and digital organisation to own the digital infrastructure that will define your ability to succeed.
+            </h3>
 
-                    <h3 class="people-appear model-txt hide">
-                    A digital transformation cannot happen without an organisation that has the right skills and ways of working.<br> <br>
-                    We map your organisation of today and chart your organisation of tomorrow. And then we help you get there.
-                    </h3>
+            <h3 class="people-appear model-txt hide">
+              A digital transformation cannot happen without an organisation that has the right skills and ways of working.<br />
+              <br />
+              We map your organisation of today and chart your organisation of tomorrow. And then we help you get there.
+            </h3>
 
             <div class="model-wrap">
-            <div class="model-con">
-            <div class="the-model"></div>
+              <div class="model-con">
+                <div class="the-model"></div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
         </div>
       </section>
 
@@ -95,13 +125,15 @@
     </div>
     <div id="burger" class="hide">
       <ul id="burger-ul">
-        <div id="close">  <img src="img/close-icon.svg" /></div>
+        <div id="close"><img src="img/close-icon.svg" /></div>
         <li><a href="index.html">Home </a></li>
         <li><a href="principles.html">Principles</a></li>
         <li><a href="insights.html">Insights</a></li>
         <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="sektor.html">Sectors</a></li>
         <li><a href="cases.html">Cases</a></li>
         <li><a href="aboutus.html">About us</a></li>
+        <li><a href="career.html">Career</a></li>
       </ul>
     </div>
 

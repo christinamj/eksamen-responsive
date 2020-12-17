@@ -51,6 +51,35 @@ a {
 nav {
   padding-top: 34px;
   margin-right: 5%;
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 22px 3px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 22px 3px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.point-about:hover .dropdown-content {
+  display: block;
+}
+
+.point-expertise:hover .dropdown-content1 {
+  display: block;
 }
 
 a:visited {
@@ -678,6 +707,11 @@ hr.hr-bottom {
   background-image: url("img/travel.jpg");
 }
 
+.sektor-image3 {
+  background-image: url("img/sektor-3.jpg");
+  background-position: 20% 22%;
+}
+
 .sektor-1 {
   background-color: #2f5160;
 }
@@ -687,10 +721,50 @@ hr.hr-bottom {
 }
 
 .section2-txt-sektor {
+  margin-top: 0;
+}
+
+.section2-txt-sektor h2 {
   margin-top: 6%;
 }
 
-.section2-txt-sektor hr {
+.section-sektor-second {
+  display: flex;
+  height: calc(100vh - 75px);
+  scroll-snap-align: start;
+  width: 100vw;
+}
+
+.sektor-col1,
+.sektor-col2 {
+  width: 50%;
+}
+
+.sektor-col1 {
+  background-color: #2b4546;
+  color: white;
+}
+
+.p-high {
+  position: absolute;
+  bottom: 23%;
+}
+
+.highlighted {
+  position: absolute;
+  bottom: 14%;
+}
+
+.sektor-col1 .section-2-text,
+.sektor-col2 .section-2-text,
+.section2-txt-sektor .section-2-text {
+  margin-top: 10%;
+  position: relative;
+  height: calc(100vh - 75px);
+}
+.section2-txt-sektor hr,
+.sektor-col1 hr,
+.sektor-col2 hr {
   margin-bottom: 30px;
 }
 
@@ -1565,6 +1639,23 @@ svg #concept-g:hover path {
   width: 100%;
 }
 
+.privat-con {
+  margin-top: 15%;
+  margin-left: 5.5%;
+  margin-right: 15%;
+}
+
+.privat-con p {
+  padding-bottom: 30px;
+}
+
+.privat-link {
+  color: white !important;
+  font-family: "raleway", sans-serif;
+  position: relative;
+  top: 5%;
+}
+
 .aboutus-text {
   position: relative;
   margin-left: 11%;
@@ -1725,37 +1816,32 @@ input {
 
 /* SEKTOR */
 
-.p-high {
-  margin-top: 20%;
-}
-
 .highlighted {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-top: 4%;
+  width: 100%;
 }
 
-.highligt-1 {
-  width: 100px;
-  height: 18px;
-  background-image: url("logos/sentido.svg");
+.highlight-1 {
+  width: 60px;
+  height: 30px;
+  /* background-image: url("logos/sentido.svg"); */
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .highligt-2 {
-  width: 100px;
-
-  height: 18px;
-  background-image: url("logos/radisson.svg");
+  width: 108px;
+  height: 62px;
+  /* background-image: url("logos/radisson.svg"); */
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .highligt-3 {
-  width: 100px;
-  height: 18px;
-  background-image: url("logos/tc.svg");
+  width: 108px;
+  height: 62px;
+  /* background-image: url("logos/tc.svg"); */
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1944,6 +2030,28 @@ input {
     padding: 20px;
     padding-top: 30px;
   }
+
+  .sektor-col1 .highlighted,
+  .sektor-col2 .highlighted {
+    position: absolute;
+    bottom: 11vh;
+  }
+  .sektor-col1 .p-high,
+  .sektor-col2 .p-high {
+    position: absolute;
+  }
+
+  .p-high,
+  .p-high {
+    position: absolute;
+  }
+
+  body > div.section-con > section:nth-child(4) > div > div.section2-txt-sektor.section2-txt > div,
+  body > div.section-con > section:nth-child(2) > div > div.section2-txt-sektor.section2-txt > div {
+    position: relative;
+    margin-left: 11%;
+    height: calc(100vh - 75px);
+  }
 }
 
 @media only screen and (max-width: 965px) {
@@ -1953,7 +2061,22 @@ input {
     padding-bottom: 0;
     max-width: 50vw;
   }
+  .section2-txt-sektor hr,
+  .sektor-col1 hr,
+  .sektor-col2 hr {
+    margin-bottom: 21px;
+    margin-top: 21px;
+  }
+  .section2-txt-sektor h2 {
+    max-width: 500px;
+    font-size: 26px;
+    padding-bottom: 30px;
+    font-weight: 300;
+  }
 
+  .section2-txt-sektor p {
+    margin-right: 32px !important;
+  }
   .section-exp-col1 {
     height: unset;
     color: white;
@@ -2092,7 +2215,7 @@ input {
   }
 
   nav {
-    display: block;
+    display: flex;
   }
 }
 
@@ -2121,6 +2244,14 @@ input {
     scroll-snap-type: none;
   }
 
+  .position-text {
+    scroll-snap-align: none;
+    overscroll-behavior: contain;
+    padding-top: 7%;
+    padding-left: 5.5%;
+    padding-right: 14%;
+    background-color: #f4f4f4;
+  }
   .btn {
     margin-top: 30px;
     height: 44px;
@@ -2228,6 +2359,12 @@ input {
     width: 82%;
     top: 48px;
   }
+  body > div.section-con > section:nth-child(4) > div > div.section2-txt-sektor.section2-txt > div,
+  body > div.section-con > section:nth-child(2) > div > div.section2-txt-sektor.section2-txt > div {
+    position: relative;
+    margin-left: 5.5%;
+    height: calc(100vh - 75px);
+  }
 
   .sector-txt-wrap {
     margin-left: 5.5%;
@@ -2260,11 +2397,14 @@ input {
     width: 98%;
     height: 91%;
     background-position: 93%;
-    background-image: url("img/career.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  .p-high {
+    margin-top: 11%;
   }
 
   .section2-image-home {
@@ -2534,7 +2674,8 @@ input {
   }
 
   .section-footer {
-    height: 100%;
+    height: 58%;
+
     width: 100vw;
     padding-bottom: 5%;
   }
@@ -2621,6 +2762,42 @@ input {
     margin-bottom: 20px;
   }
 
+  .sektor-image1 {
+    width: 93%;
+    height: 85%;
+
+    background-position: 61% 64%;
+
+    margin-top: 4%;
+    margin-bottom: 20px;
+  }
+
+  .section-sektor-second {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 75px);
+    scroll-snap-align: start;
+    width: 100vw;
+  }
+
+  .sektor-col1,
+  .sektor-col2 {
+    width: 100%;
+  }
+
+  .sektor-1 {
+    margin-bottom: 0%;
+  }
+
+  .sektor-con-3 {
+    flex-direction: column-reverse;
+  }
+
+  .section2-txt-sektor {
+    margin-top: 4%;
+    margin-bottom: 0%;
+  }
+
   .open-positions {
     width: 100%;
 
@@ -2693,6 +2870,23 @@ input {
     width: 750px !important;
   }
 
+  .section-footer {
+    height: 60%;
+    width: 100vw;
+    padding-bottom: 5%;
+  }
+
+  .sektor-col1 .highlighted,
+  .sektor-col2 .highlighted,
+  .highlighted {
+    position: absolute;
+    bottom: 6%;
+  }
+
+  .p-high {
+    bottom: 16%;
+  }
+
   .form-control {
     height: 86px;
   }
@@ -2729,6 +2923,15 @@ input {
 
   .model-txt {
     font-size: 16px;
+  }
+
+  .img-whitepaper {
+    height: auto;
+    width: 100vw;
+    background-image: url(img/whitepaper.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .entry-hr {
@@ -2861,7 +3064,7 @@ input {
   }
 
   .section-article-list .article-text {
-    height: 33vh;
+    height: 33vh !important;
   }
 
   .article-list-txt {
@@ -2972,6 +3175,7 @@ input {
 
   .link-btn {
     margin-top: 30px;
+    width: 100%;
     height: 50px;
     border: 1.8px solid white;
     text-align: center;
@@ -3118,7 +3322,7 @@ input {
   }
 
   .section-cas {
-    height: calc(233vh - 75px);
+    height: calc(100% - 75px);
     width: 100vw;
   }
 
@@ -3273,7 +3477,7 @@ input {
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 
   .article-side {
@@ -3500,6 +3704,29 @@ input {
   }
 }
 
+@media only screen and (max-width: 455px) {
+  .p-high {
+    display: none;
+  }
+
+  .section2-txt {
+    position: relative;
+    margin-top: 15%;
+    height: calc(100% - 75px);
+    margin-bottom: 15%;
+    top: 0;
+  }
+
+  .section-2 {
+    height: calc(100% - 75px);
+  }
+
+  .section2-txt-sektor {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 360px) {
   .section-2-text h2 {
     margin-right: 10%;
@@ -3515,6 +3742,13 @@ input {
 
   .section-2 {
     height: calc(100% - 75px);
+  }
+  .highlight-1 {
+    width: 57px;
+    height: 22px;
+    /* background-image: url(logos/sentido.svg); */
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -3687,12 +3921,11 @@ input {
   .section-articles .article-text {
     padding: 30px;
     padding-top: 20px;
-    height: 52vh !important;
     position: relative;
   }
 
   .section-article-list .article-text {
-    height: 62vh !important;
+    height: 62vh;
   }
 }
 

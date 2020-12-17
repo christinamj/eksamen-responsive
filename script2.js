@@ -3,7 +3,6 @@ window.addEventListener("scroll", scrollFunction);
 let currentURL = window.location.href;
 
 function start() {
-
   document.querySelector("#close").addEventListener("click", closeBurgerMenu);
   document.querySelector(".burgermenu").addEventListener("click", burgerMenu);
   document.querySelectorAll("nav a").forEach((p) => {
@@ -14,9 +13,7 @@ function start() {
 
   scrollFunction();
   getFooter();
-
 }
-
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -25,6 +22,9 @@ function scrollFunction() {
     document.getElementById("logo").style.backgroundImage = "url('img/responsive-black.svg')";
     document.querySelectorAll(".menupoint").forEach((link) => {
       link.style.color = "black";
+
+      document.querySelector(".dropdown-content").style.backgroundColor = "white";
+      document.querySelector(".dropdown-content1").style.backgroundColor = "white";
       link.style.fontSize = "15px";
     });
     document.querySelectorAll("nav a").forEach((p) => {
@@ -36,6 +36,8 @@ function scrollFunction() {
     document.getElementById("site-header").style.backgroundColor = "transparent";
     document.querySelector(".burgermenu").style.backgroundImage = "url('img/burger-white.svg')";
     document.getElementById("logo").style.backgroundImage = "url('img/responsive-white.svg')";
+    document.querySelector(".dropdown-content").style.backgroundColor = "transparent";
+    document.querySelector(".dropdown-content1").style.backgroundColor = "transparent";
     document.querySelectorAll(".menupoint").forEach((link) => {
       link.style.color = "white";
       link.style.fontSize = "18px";
@@ -64,4 +66,3 @@ async function getFooter() {
   const inclusionFooter = await responseFooter.text();
   document.querySelector(".section-footer").innerHTML = inclusionFooter;
 }
-
